@@ -12,7 +12,8 @@ class _EnglishState extends State<English> {
   List persons = ["1 person", "2 persons", "2-6 persons"];
   String myselcteditem = "1 person";
 
-  String sitting_area = '';
+  String Smoking_area = '';
+  String Non_Smoking_area = '';
   bool Breakfast_offer = false;
   bool Lunch_offer = false;
   bool Dinner_offer = false;
@@ -68,16 +69,110 @@ class _EnglishState extends State<English> {
                   });
                 })),
             Divider(
-              height: 20,
+              height: 30,
+            ),
+            Center(
+              child: Card(
+                color: Colors.brown[300],
+                child: Text(
+                  "Which offer would you  choose ? ",
+                  style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.brown[700],
+                      fontWeight: FontWeight.bold,
+                      fontStyle: FontStyle.italic),
+                ),
+              ),
             ),
             CheckboxListTile(
                 value: Breakfast_offer,
-                title: Text("Breakfast_offer"),
+                title: Text("Breakfast_offer",
+                    style: TextStyle(
+                        fontSize: 15,
+                        color: Colors.brown[700],
+                        fontWeight: FontWeight.bold,
+                        fontStyle: FontStyle.italic)),
                 onChanged: ((val) {
                   setState(() {
                     Breakfast_offer = val!;
                   });
                 })),
+            CheckboxListTile(
+                value: Lunch_offer,
+                title: Text("Lunch_offer",
+                    style: TextStyle(
+                        fontSize: 15,
+                        color: Colors.brown[700],
+                        fontWeight: FontWeight.bold,
+                        fontStyle: FontStyle.italic)),
+                onChanged: ((val) {
+                  setState(() {
+                    Lunch_offer = val!;
+                  });
+                })),
+            CheckboxListTile(
+                value: Dinner_offer,
+                title: Text("Dinner_offer",
+                    style: TextStyle(
+                        fontSize: 15,
+                        color: Colors.brown[700],
+                        fontWeight: FontWeight.bold,
+                        fontStyle: FontStyle.italic)),
+                onChanged: ((val) {
+                  setState(() {
+                    Dinner_offer = val!;
+                  });
+                })),
+            Divider(
+              height: 30,
+            ),
+            Center(
+              child: Card(
+                color: Colors.brown[300],
+                child: Text(
+                  "Whih area you prefer  ? ",
+                  style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.brown[700],
+                      fontWeight: FontWeight.bold,
+                      fontStyle: FontStyle.italic),
+                ),
+              ),
+            ),
+            RadioListTile(
+              title: Text(
+                'Smoking area',
+                style: TextStyle(
+                    fontSize: 15,
+                    color: Colors.brown[700],
+                    fontWeight: FontWeight.bold,
+                    fontStyle: FontStyle.italic),
+              ),
+              value: "Smoking area",
+              groupValue: Smoking_area,
+              onChanged: ((val) {
+                setState(() {
+                  Smoking_area = val.toString();
+                });
+              }),
+            ),
+            RadioListTile(
+              title: Text(
+                'Non_Smoking_area',
+                style: TextStyle(
+                    fontSize: 15,
+                    color: Colors.brown[700],
+                    fontWeight: FontWeight.bold,
+                    fontStyle: FontStyle.italic),
+              ),
+              value: "Non_Smoking_area",
+              groupValue: Non_Smoking_area,
+              onChanged: ((val) {
+                setState(() {
+                  Non_Smoking_area = val.toString();
+                });
+              }),
+            ),
             ElevatedButton(
               onPressed: (() {
                 setState(() {
