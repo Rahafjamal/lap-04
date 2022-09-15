@@ -53,10 +53,12 @@ class _HomeState extends State<Home> {
                 child: Text(
                   "Welcome to our cafe app ",
                   style: TextStyle(
-                      fontSize: 35,
-                      color: Colors.brown[700],
-                      fontWeight: FontWeight.bold,
-                      fontStyle: FontStyle.italic),
+                    fontSize: 35,
+                    color: Colors.brown[700],
+                    fontWeight: FontWeight.bold,
+                    fontStyle: FontStyle.italic,
+                    fontFamily: 'DancingScript',
+                  ),
                 ),
               ),
             ),
@@ -72,10 +74,8 @@ class _HomeState extends State<Home> {
                 });
               }),
               child: const Text(
-                "Choose visit day",
-                style: TextStyle(
-                  fontSize: 20,
-                ),
+                "Choose a day",
+                style: TextStyle(fontSize: 25, fontFamily: 'DancingScript'),
               ),
             ),
             Divider(
@@ -91,9 +91,7 @@ class _HomeState extends State<Home> {
               }),
               child: const Text(
                 "Fill your information",
-                style: TextStyle(
-                  fontSize: 20,
-                ),
+                style: TextStyle(fontSize: 25, fontFamily: 'DancingScript'),
               ),
             ),
           ],

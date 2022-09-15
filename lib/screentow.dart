@@ -39,10 +39,11 @@ class _EnglishState extends State<English> {
                 child: Text(
                   "How many person ? ",
                   style: TextStyle(
-                      fontSize: 20,
+                      fontSize: 35,
                       color: Colors.brown[700],
                       fontWeight: FontWeight.bold,
-                      fontStyle: FontStyle.italic),
+                      fontStyle: FontStyle.italic,
+                      fontFamily: 'DancingScript'),
                 ),
               ),
             ),
@@ -57,10 +58,11 @@ class _EnglishState extends State<English> {
                         child: Text(
                           "$e",
                           style: TextStyle(
-                              fontSize: 15,
+                              fontSize: 25,
                               color: Colors.brown[700],
                               fontWeight: FontWeight.bold,
-                              fontStyle: FontStyle.italic),
+                              fontStyle: FontStyle.italic,
+                              fontFamily: 'DancingScript'),
                         )))
                     .toList(),
                 onChanged: ((val) {
@@ -77,10 +79,11 @@ class _EnglishState extends State<English> {
                 child: Text(
                   "Which offer would you  choose ? ",
                   style: TextStyle(
-                      fontSize: 20,
+                      fontSize: 35,
                       color: Colors.brown[700],
                       fontWeight: FontWeight.bold,
-                      fontStyle: FontStyle.italic),
+                      fontStyle: FontStyle.italic,
+                      fontFamily: 'DancingScript'),
                 ),
               ),
             ),
@@ -88,10 +91,11 @@ class _EnglishState extends State<English> {
                 value: Breakfast_offer,
                 title: Text("Breakfast_offer",
                     style: TextStyle(
-                        fontSize: 15,
+                        fontSize: 25,
                         color: Colors.brown[700],
                         fontWeight: FontWeight.bold,
-                        fontStyle: FontStyle.italic)),
+                        fontStyle: FontStyle.italic,
+                        fontFamily: 'DancingScript')),
                 onChanged: ((val) {
                   setState(() {
                     Breakfast_offer = val!;
@@ -101,10 +105,11 @@ class _EnglishState extends State<English> {
                 value: Lunch_offer,
                 title: Text("Lunch_offer",
                     style: TextStyle(
-                        fontSize: 15,
+                        fontSize: 25,
                         color: Colors.brown[700],
                         fontWeight: FontWeight.bold,
-                        fontStyle: FontStyle.italic)),
+                        fontStyle: FontStyle.italic,
+                        fontFamily: 'DancingScript')),
                 onChanged: ((val) {
                   setState(() {
                     Lunch_offer = val!;
@@ -114,10 +119,11 @@ class _EnglishState extends State<English> {
                 value: Dinner_offer,
                 title: Text("Dinner_offer",
                     style: TextStyle(
-                        fontSize: 15,
+                        fontSize: 25,
                         color: Colors.brown[700],
                         fontWeight: FontWeight.bold,
-                        fontStyle: FontStyle.italic)),
+                        fontStyle: FontStyle.italic,
+                        fontFamily: 'DancingScript')),
                 onChanged: ((val) {
                   setState(() {
                     Dinner_offer = val!;
@@ -132,10 +138,11 @@ class _EnglishState extends State<English> {
                 child: Text(
                   "Whih area you prefer  ? ",
                   style: TextStyle(
-                      fontSize: 20,
+                      fontSize: 35,
                       color: Colors.brown[700],
                       fontWeight: FontWeight.bold,
-                      fontStyle: FontStyle.italic),
+                      fontStyle: FontStyle.italic,
+                      fontFamily: 'DancingScript'),
                 ),
               ),
             ),
@@ -143,10 +150,11 @@ class _EnglishState extends State<English> {
               title: Text(
                 'Smoking area',
                 style: TextStyle(
-                    fontSize: 15,
+                    fontSize: 25,
                     color: Colors.brown[700],
                     fontWeight: FontWeight.bold,
-                    fontStyle: FontStyle.italic),
+                    fontStyle: FontStyle.italic,
+                    fontFamily: 'DancingScript'),
               ),
               value: "Smoking area",
               groupValue: Smoking_area,
@@ -160,10 +168,11 @@ class _EnglishState extends State<English> {
               title: Text(
                 'Non_Smoking_area',
                 style: TextStyle(
-                    fontSize: 15,
+                    fontSize: 25,
                     color: Colors.brown[700],
                     fontWeight: FontWeight.bold,
-                    fontStyle: FontStyle.italic),
+                    fontStyle: FontStyle.italic,
+                    fontFamily: 'DancingScript'),
               ),
               value: "Non_Smoking_area",
               groupValue: Non_Smoking_area,
@@ -183,7 +192,7 @@ class _EnglishState extends State<English> {
               }),
               child: const Text(
                 'Back to HomePage',
-                style: TextStyle(fontSize: 25),
+                style: TextStyle(fontSize: 25, fontFamily: 'DancingScript'),
               ),
             ),
           ],
